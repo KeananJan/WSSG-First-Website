@@ -1,0 +1,27 @@
+
+h2
+{
+    margin: 0 50px;
+    font-size: 10px;
+    color: white;
+    display: inline;
+}
+
+button
+{
+    width: 10px;
+    height: 25px;
+    outline: none;
+    border-style: none;
+    font-size: 10px;
+    background-color: grey;
+    box-shadow: 8px 8px 20px black,-8px -8px 20px black;
+   
+}
+ 
+button:hover
+{
+    background-color: dodgerblue;
+    color: red;
+    border-color: black;
+}

@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WSSG</title>
+    <link  rel="stylesheet" href="homePage.css">
+   
+    
+    </head>
+    <body>
+
+    <section class="header"> 
+        <nav> 
+            <!--adding in the logo for the webspage top left-->
+            <a href="homePAGE.html"> WSSG </a>
+
+            <!--adding links-->
+            <div class=" navigationbar" id="navigationbar">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+
+                <ul>
+                    <li><a href="homePAGE.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="">SERVICES</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="orderNow.php">ORDER NOW </a></li>
+                    <li><a href="userAccount.html">USER ACCOUNT </a></li>
+                    <li><a href="loginForm.php">LOG OUT</a></li>
+                </ul>
+
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1 class = "H1"> 
+                WSSG
+            </h1>
+
+            <p> 
+             
+            WELCOME TO WSSG, WHERE WE VALUE AND TREAT ALL OUR CUSTOMERS AS FAMILY AND NOTHING LESS
+            <br>
+            AND EVERYTHING IS FIREGRILLED TO LAST DEGREE.
+
+            </p>
+            </p>
+            <!-- this is how links are made -->
+            <a href="about.html" class="hero-button">HISTORY OF WSSG</a>
+            <link> 
+
+        </div>
+    </section>
+ 
+   
+
+<!-- Meals that WSSG is known for  -->
+<section class="topMeals">
+
+<h1 class="H2">    Our most meals were are most well know for </h1>
+<div class="foodRows">
+  <div class="foods-col">
+        <img src="images/london.png">
+
+        <div    class="layer">
+                <h3>Burger and fries</h3>
+        </div>
+        </div>
+
+            <div class="foods-col">
+                <img src="images/newyork.png">
+                <div class="layer">
+                  <h3>Wings</h3>
+            </div>
+            </div>
+
+            <div class="foods-col">
+                <img src="images/washington.png">
+                <div class="layer">
+
+                <h3>Pizza</h3>
+                </div>
+            </div>
+
+
+</div>
+
+</section>
+
+<!---Services they off-->
+
+<section class="services">
+
+        <h1>Our Services offered</h1>
+        <p> </p>
+
+        <div class="row">
+
+           <!-- 1 -->
+            <div class="services-col">
+                <img src="images/library.png">
+                <h3>World Class Library</h3>
+                <p>Information about the library and alot more information</p>
+            </div>
+
+            <!-- 2 -->
+            <div class="services-col">
+                <img src="images/basketball.png">
+                <h3>Fast Foods</h3>
+                <p>Information about the library and alot more information</p>
+            </div>
+
+            <!-- 3 -->
+            <div class="services-col">
+                <img src="images/cafeteria.png">
+                <h3>Catering</h3>
+                <p>Information about the library and alot more information</p>
+             </div>
+
+            </div>
+       
+</section>
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>alot of words about us</p>
+</section>
+
+
+
+<!--JavaScript code toggle menu-->
+        <script>
+                 var navLinks= document.getElementById("navLinks");  
+                 function showMenu()
+                 {
+                    navLinks.style.right ="0";
+                 }     
+                 
+                 function hideMenu()
+                 {
+                    navLinks.style.right ="-300px";
+                 } 
+        </script>
+<!----need a new app for icons-->
+        <div class="icons">
+            <i class = "fa-brands fa-facebok"></i>
+            <i class = "fa fa-twitter"></i>
+            <i class = "fa fa-instagram"></i>
+            <i class = "fa fa-linkedin"></i>
+        </div>
+</body>
+</html>

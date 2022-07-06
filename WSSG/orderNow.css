@@ -1,0 +1,293 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'League Gothic', sans-serif;
+    font-family: 'Poppins', sans-serif;
+  }
+ 
+  .H1
+  {
+    text-align: center;
+    color: orangered;
+    /* used to color the usser account settings logo */
+  }
+  
+  
+  .header
+  {
+    min-height: 100vh;
+    width: 100%;
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  /* background of the user account settings */
+  }
+  
+  nav
+  {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    /* formats the links positioning */
+  }
+  
+  /* spacing and positioning of links*/
+  .navigationbar
+  {
+    flex: 2;
+    text-align: right;
+  
+  }
+  .navigationbar ul li
+  {
+    list-style: none;
+    display: inline-block;
+    /* this defines the spacing of the text the first value px shifts vertically and next shift horizontally*/
+    padding:  8px 12px;
+    position: relative;
+  }
+  
+  
+  .navigationbar ul li a
+  {
+    /* this defines the size and color of the text*/
+  /*if i need more font search google fonts*/
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+  }
+  
+  
+  .navigationbar ul li:hover::after
+  {
+    content: '';
+      width: 0%;
+      height: 2px;
+      background: orangered;
+      display: block;
+      margin: auto;
+      transition: 0.5s;
+  }
+  
+  /*adjusting the size of the tilte "USER ACCOUNTS SETTING"*/
+  .text-box h1
+  {
+    font-size: 68px;
+  }
+  
+  /*footer socials   */
+  .footer
+  {
+      background-color: orangered;
+      width: 100%;
+      color: white;
+      text-align: center;
+      padding: 30px 0;  
+  } 
+ 
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Adds a hover effect*/
+.fa:hover
+ {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook 
+{
+  padding: 20px;
+  font-size: 30px;
+  width: 15px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  background: #3B5998;
+  color: white;
+  
+}
+/* IG */
+.fa-instagram {
+  background: #7c04a0;
+  color: white;
+  padding: 20px;
+  font-size: 30px;
+  width: 15px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+  padding: 20px;
+  font-size: 30px;
+  width: 15px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+  /* end of footer socials  */
+
+  .updatebtn:hover
+  {
+    background-color: white;
+    border: 1px solid orangered;
+    background: orangered;
+    transition: .6s;
+  }
+  
+ 
+
+  .list
+  {
+      width: 100%;
+  }
+  /* end of formatting  */
+  
+  
+ /* checkboxes formatting */
+ .checkboxes label {
+  display: inline-block;
+  padding-right: 10px;
+  white-space: nowrap;
+}
+.checkboxes input 
+{
+  vertical-align: middle;
+}
+.checkboxes label span
+{
+  vertical-align: left;
+}
+/* End */
+
+/* place order  */
+legend
+{
+ margin-left: 20%;
+ border: 2px solid; 
+ border-color: white;
+ border-width: 40%;
+ margin-left: 20%;
+ margin-right: 20%;
+ padding: 20px;
+ 
+ 
+}
+
+.pizza
+{
+  display: inline;
+}
+label
+{
+  text-align: left;
+  font-size: 25px;
+  color: white;
+}
+.addBtn
+{
+  text-align: center;
+  margin-left: 45%;
+  width: 20%;
+  height: 44px;
+  margin-top: 2%;
+}
+.addBtn:hover
+{
+  background-color: orangered;
+}
+button
+{
+  width: 70px;
+  height: 50px;
+  outline: none;
+  border-style: none;
+  font-size: 50px;
+  background-color: white;
+
+}
+ .quanity
+ {
+  color: white;
+ }
+/* end of place order */
+  
+    /*adjusting so it fits on all devices*/
+    @media(max-width:700px)
+    {
+      .text-box h1
+      {
+          font-size: 20px;
+      }
+    
+      .nav-links ul li
+      {
+          display: block;
+      }
+    
+      .nav-links
+      {
+          position: absolute;
+          background: red;
+          height: 100vh;
+          width: 200px;
+          top: 0;
+          right: -300px;
+          text-align: left;
+          z-index: 2;
+          transition: .5s;
+      }
+      nav .fa
+      {
+          display: block;
+          color:white;
+          margin: 10px;
+          font-size: 22px;
+          cursor: pointer;
+      }
+    
+      .nav-links
+      {   /*this sets the spacing in the menu bar */
+          padding: 30px;
+      }
+    
+      .row
+      {
+          flex-direction: column;
+      }
+    
+      .testimonials-col img
+      {   
+          margin-left: 0px;
+          margin-right: 15px;
+      }
+    
+      .cta h1
+      {
+          font-size: 24px;
+      }
+      
+    }
+  
+  
+  
+   

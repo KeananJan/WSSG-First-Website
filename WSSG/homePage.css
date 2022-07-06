@@ -1,0 +1,392 @@
+/* beginning of homePage CSS */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'League Gothic', sans-serif;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .H1
+  {
+    text-align: center;
+    color: white;
+  }
+  
+  .H2
+  {
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .welcome
+  {
+    background-color: black;
+    width: 50%;
+    padding: 16px;
+    display: inline-block;
+    border: none;
+  
+  }
+
+  .header
+  {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(images/background.jpg);
+    /* background-color: black; */
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  
+  }
+  
+  nav
+  {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /*to work on the logo*/
+  nav img
+  {
+    width: 150px;
+  
+  }
+  /* spacing and positioning of links*/
+  .navigationbar
+  {
+    flex: 1;
+    text-align: right;
+  
+  }
+  .navigationbar ul li
+  {
+    list-style: none;
+    display: inline-block;
+    /* this defines the spacing of the text the first value px shifts vertically and next shift horizontally*/
+    padding:  8px 12px;
+    position: relative;
+  }
+  
+  /* this defines the size and color of the text*/
+  /*if i need more font search google fonts*/
+  .navigationbar ul li a
+  {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+  }
+  /*Spicing up the button Home,about etc*/
+  .navigationbar ul li::after
+  {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: orangered;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  
+  }
+  .navigationbar ul li:hover::after
+  {
+  width: 100%
+  
+  }
+  /* this is where all the mods are done to the text box below the 
+  WSSG logo on the home page*/
+  .text-box
+  {
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  /*adjusting the size of the tilte "WSSG"*/
+  .text-box h1
+  {
+    font-size: 68px;
+  }
+  /*adjusting the size of the parargraph under "WSSG" logo*/
+  .text-box p
+  {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: white;
+  }
+  /* History of WSSG */
+  .hero-button
+  {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer; 
+  
+  }
+  
+  .hero-button:hover
+  {
+    border: 1px solid orangered;
+    background: orangered;
+    transition: 1s;
+  }
+  
+  nav .fa
+  {
+    display: none;
+  }
+
+
+  /* formating of the foods rows  */
+  
+  .foods
+{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+
+}
+
+.row
+{
+  display: flex;
+  margin-top: 5%;
+  justify-content: space-between;
+}
+    
+
+.foods-col
+{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.foods-col img
+{
+    height: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+
+}
+/* end of foods formatting */
+
+ /*footer socials   */
+ .footer
+ {
+     background-color: orangered;
+     width: 100%;
+     color: white;
+     text-align: center;
+     padding: 30px 0;  
+ } 
+
+
+/* Facebook */
+
+.fa-facebook 
+{
+  padding: 20px;
+  font-size: 30px;
+  width: 15px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  background: #3B5998;
+  color: white;
+  
+}
+/* IG */
+
+.fa-instagram {
+  background: #7c04a0;
+  color: white;
+  padding: 20px;
+  font-size: 30px;
+  width: 15px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+/* Twitter */
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+  padding: 20px;
+  font-size: 30px;
+  width: 15px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+  /* end of footer socials  */
+
+  
+  
+  /*adjusting so it fits on all devices*/
+  @media(max-width:700px)
+  {
+    .text-box h1
+    {
+        font-size: 20px;
+    }
+  
+    .nav-links ul li
+    {
+        display: block;
+    }
+  
+    .nav-links
+    {
+        position: absolute;
+        background: red;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -300px;
+        text-align: left;
+        z-index: 2;
+        transition: .5s;
+    }
+    nav .fa
+    {
+        display: block;
+        color:white;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+  
+    .nav-links
+    {   /*this sets the spacing in the menu bar */
+        padding: 30px;
+    }
+  
+    .row
+    {
+        flex-direction: column;
+    }
+  
+    .testimonials-col img
+    {   
+        margin-left: 0px;
+        margin-right: 15px;
+    }
+  
+    .cta h1
+    {
+        font-size: 24px;
+    }
+    
+  }
+  
+  /* foods */
+  
+  .foodRows
+  {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+  
+  }
+  
+  .foods-col
+  {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .foods-col img
+  {
+    width: 100%;
+    display: block;
+  
+  }
+  
+  .layer
+  {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .5;
+  }
+  
+  .layer:hover
+  {
+    background: rgba(8, 2, 43, 0.288);
+  }
+  .layer h3
+  {
+    width: 100%;
+    font-weight: 500;
+    color: white;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .layer:hover h3 
+  {
+    bottom: 50%;
+    opacity: 1;
+  }
+  
+  /*-----facilities----*/
+  .services
+  {
+    width: 80%;
+    margin:auto;
+    text-align: center;
+    padding-top: 100px;
+  }
+  
+  .services-col
+  {
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+  }
+  
+  .services-col img 
+  {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .services-col p 
+  {
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  
+  
